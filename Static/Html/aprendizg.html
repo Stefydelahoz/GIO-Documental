@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <title>RECORD</title>
+        <style>
+       
+            body{
+                background: url("../static/img/tecnologia.jpg") no-repeat center center fixed;
+            }
+
+            h1{
+                color: rgb(5, 190, 5);
+                text-align: center;
+                margin-left: 20%;
+                margin-top: -10%;
+                margin-bottom: auto;
+            }
+
+            h3{
+                color: rgb(5, 190, 5);
+                margin-top: 0%;
+            }
+            h4{
+                color: rgb(5, 190, 5);
+                margin-top: 0%;
+                text-align: center;
+            }
+
+            p{
+                color: rgb(5, 190, 5);
+                text-align: center;
+            }
+
+            footer{
+                margin-top: 300px;
+            }
+            .cab {
+                color: white;
+                margin-top: 0px;
+                margin-left: 0px;
+                margin-bottom: 25px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-style: normal;
+                
+            }
+            .photo{
+                margin-left: 60%;
+                margin-top: -480px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="menu.html">
+                    <img src="../static/img/logo-sena-verde.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-top"> <h1>RECORD GESTIÓN DOCUMENTAL</h1>
+                </a>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light cab">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>    
+        </nav>
+        <div class="container-fluid">
+            <h3>Datos Basicos</h3>
+                <div class="row g-3">
+                    <div class="col-2 input-container">
+                        <label for="formGroupExampleInput " class="form-label">Ficha</label>
+                        <input type="text " class="form-control " id="formGroupExampleInput " placeholder="Ingrese Numero de Ficha">
+                    </div>
+                </div>
+                <br>
+                <h3>Datos del Aprendiz</h3>
+                <div class="row g-3">
+                    <div class="col-5 input-container">
+                        <label for="formGroupExampleInput " class="form-label">Nombres</label>
+                        <input type="text " class="form-control " id="formGroupExampleInput " placeholder="Ingrese Nombres del Aprendiz">
+                    </div>
+                    <div class="col-5 input-container">
+                        <label for="inputText" class="form-label ">Apellidos</label>
+                        <input type="text" class="form-control " id="inputText" placeholder="Ingrese Apellidos del Aprendiz">
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-2 input-container">
+                        <label for="inputTex" class="form-label">Tipo de Identificación</label>
+                        <input type="text" class="form-control " id="inputText">
+                    </div>
+                    <div class="col-md-4 input-container">
+                        <label for="inputTex" class="form-label">Numero de Identificación</label>
+                        <input type="text" class="form-control " id="inputText" placeholder="No Identificación">
+                    </div>
+                    <div class="col-md-4 input-container">
+                        <label for="inputTex" class="form-label">Numero de Telefono</label>
+                        <input type="text" class="form-control " id="inputText" placeholder="Telefono del Aprendiz">
+                    </div>
+                    <div class="col-4 input-container">
+                        <label for="formGroupExampleInput " class="form-label ">Dirección</label>
+                        <input type="text " class="form-control " id="formGroupExampleInput " placeholder="Ingrese Dirección">
+                    </div>
+                    <div class="col-3 input-container">
+                        <label for="formGroupExampleInput " class="form-label ">Barrio</label>
+                        <input type="text " class="form-control " id="formGroupExampleInput " placeholder="Ingrese Barrio">
+                    </div>
+                    <div class="col-3 input-container">
+                        <label for="formGroupExampleInput " class="form-label ">Municipio</label>
+                        <input type="text " class="form-control " id="formGroupExampleInput " placeholder="Ingrese Municipio">
+                    </div>
+                </div>
+                <br>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-success" @click="guardar">Guardar</button>
+                </div>
+            </div>
+            <div id="icono" class="photo">
+                <img src="..\Static\Img\foto.jpg" width="120">
+                <div class="input-group mb-2">
+                    <input type="file">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-success" @click="guardar">Guardar</button>
+                </div>
+            </div>
+        </div>        
+
+        <FOOTER>
+          <p>@Stefanny De La Hoz</p> 
+        </FOOTER>
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</html>

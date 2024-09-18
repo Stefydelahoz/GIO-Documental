@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Source Sans 3', sans-serif;
+    text-decoration: none;
+}
+
+*a{
+    text-decoration: none;
+    color:rgb(8, 178, 8);
+}
+
+/* Estilo para el header */
+header {
+    position: fixed; /* Cambiar a sticky si es necesario */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    background-color: white; /* Asegura que el fondo sea visible si es necesario */
+}
+
+/* Estilo para las cards */
+.card {
+    position: relative; /* Define una posición relativa */
+    z-index: 1; /* Debe ser menor que el header para no superponerlo */
+    margin-top: 50px; /* Ajusta según la altura del header para evitar superposición */
+}
+
+
+/*header superior*/
+
+.header__superior{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    color: rgb(8, 178, 8);
+    size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -70px;
+    padding: 0px;
+
+}
+
+.logo img{
+    width: 100px;
+    padding: 10px 10px;
+}
+
+.icono{
+    width: 50%;
+    margin: auto;
+    padding: 200px;
+    display: block;
+}
+
+/*barra menu*/
+
+.container__menu{
+    width: 100%;
+    height: 100px;
+    background: rgb(8, 178, 8);   
+}
+
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    padding: -20px -20px;
+}
+
+nav{
+    height: 100%;
+    margin-top: -20px;
+}
+
+nav > ul{
+    height: 100%;
+    display: flex;
+}
+
+nav ul li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav > ul > li:first-child > a {
+    background-image: url(../Img/home.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 40px;
+}
+
+nav > ul > li:first-child:hover > a {
+    background-image: url(../Img/home.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: all 300ms ease;
+}
+
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: gray;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+#selected{
+    transform: scale(1.1);
+    background-color: gray;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+/*submenu*/
+
+nav ul li ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70px
+}
+
+nav ul li ul:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+
+nav ul li ul li a{
+    display: block;
+    color: black;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+
+nav ul li ul li a:hover{
+    background: rgb(8, 178, 8);
+    color: white;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+/*main*/
+
+h2{
+    color:rgb(8, 178, 8);
+    margin-top: 240px;
+    margin-left: 20px;
+}
+
+h3{
+    color:rgb(8, 178, 8);
+}
+
+.container-fluid{
+    background: white;
+}
+
+.gill{
+    margin-left:50px;
+}
+
+.card-title{
+    color: white;
+}
+
+.card-body{
+    background:gray;
+    height: 100%;
+}
+
+.row{
+    max-width: 100%;
+    margin-top: auto;
+    padding-bottom: 0px;
+}
+
+.row h3{
+    text-align: center;
+}
+
+.card-link{
+    color:white;
+}
+
+.custom-box {
+    border: 5px solid rgb(8, 178, 8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgb(8, 178, 8);
+    width: 80%; /* Ajusta según lo necesario */
+    max-width: 500px; /* Ancho máximo para limitar el tamaño */
+    margin: 0 auto; /* Centra el contenedor */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los elementos */
+}
+
+.custom-box h2{
+    text-align: center;
+    color:rgb(8, 178, 8);
+    margin-top: 10px;
+}
+
+.custom-box input{
+    background-color:rgb(8, 178, 8);
+    border-color: black;
+}
+
+.custom-box textarea{
+    background-color:rgb(8, 178, 8);
+    border-color: black;
+}
+
+.btn{
+    background-color:rgb(8, 178, 8);
+    font-size: 14px;
+}
+
+/*grid*/
+
+.grid {
+    background-color: rgb(8, 178, 8);
+    margin-top: 300px;
+    max-width: 100%;
+    padding: 0px; /* Si no necesitas relleno, `0` es suficiente */
+}
+
+.grid h1{
+    color: white;
+}
+
+.gridd{
+    background-color: rgb(8, 178, 8);
+    margin-top: 0px;
+    max-width: 100%;
+    padding: 0px 0px;
+}
+
+.gridd p{
+    color: white;
+    font-size: 18px;
+    margin: 0; /* Elimina los márgenes alrededor de los párrafos */
+    padding: 0; /* Elimina el relleno alrededor de los párrafos */
+    line-height: 1.2; /* Ajusta el espacio entre líneas; puedes cambiar el valor según lo necesites */
+}
+
+.grid_center{
+    background: white;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+
+.row{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Carrusel */
+
+/* Centrar los elementos del carrusel */
+.grid_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajustar la altura del carrusel para que se vea uniforme */
+.carousel-inner img {
+    object-fit: cover;
+    height: 400px; /* Ajusta según necesites */
+}
+
+/* Espaciado y centrado del título */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem; /* Tamaño de fuente ajustable */
+}
+
+/* Estilo de las cards */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade un poco de sombra */
+    transition: transform 0.2s; /* Efecto hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente la card al pasar el mouse */
+}
+
+/* Centrar los botones dentro de las cards */
+.card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que las columnas se ajusten en varias filas si es necesario */
+    background-color: #f8f9fa; /* Fondo del footer */
+    padding: 20px; /* Espacio alrededor del contenido */
+}
+
+.icon-container {
+    display: flex; /* Alinea los íconos en fila */
+    gap: 10px; /* Espacio entre los íconos */
+    align-items: center; /* Alinea verticalmente los íconos */
+}
+
+.icon img {
+    width: auto; /* Ajusta el ancho según el contenido */
+    height: 50px; /* Establece una altura específica para los íconos */
+    margin: 0; /* Remueve márgenes innecesarios */
+    padding: 5px; /* Espacio alrededor del ícono */
+    display: block;
+    cursor: pointer; /* Cambia el cursor al pasar sobre los íconos */
+}
+
+.btn {
+    background-color: rgb(8, 178, 8); /* Color del botón */
+    color: white; /* Color del texto del botón */
+    border: 2px solid black; /* Color y grosor del borde */
+    padding: 8px 16px; /* Espacio dentro del botón */
+    font-size: 12px; /* Tamaño del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+li {
+    list-style: none; /* Remueve el punto de la lista */
+    margin-bottom: 5px; /* Espacio entre los elementos de la lista */
+}
+
+li a {
+    text-decoration: none; /* Remueve el subrayado de los enlaces */
+    padding-left: 10px;
+    font-size: 18px; /* Tamaño del texto */
+    color: #000; /* Color del texto */
+}
+
+li a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+h3 {
+    margin-bottom: 10px; /* Espacio debajo de los títulos */
+}
+
+/* Estilos para los botones laterales */
+.botones-laterales {
+    position: fixed;
+    top: 300px; /* Ajusta este valor para colocar los botones debajo del header */
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000; /* Asegura que estén por encima de otros elementos */
+}
+
+.boton-lateral {
+    background-color: rgb(8, 178, 8);
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    border: 2px solid black; /* Color y grosor del borde */
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.boton-lateral:hover {
+    background-color: gray;
+}
+
+/* Estilo por defecto (modo claro) */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Estilo para modo oscuro */
+body.modo-oscuro {
+    background-color: #121212;
+    color: white;
+}
+
+/* Puedes agregar más estilos para otros elementos */
+.header_superior.modo-oscuro {
+    background-color: #333;
+}
+
+/* Elementos reponsitivos*/
+
+.icon__menu{
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+
+#label__check{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+
+#check__menu{
+    display: none;
+}
+
+@media screen and (max-width: 720px) {
+
+    .header__superior{
+        padding: 10px;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+
+
+    nav > ul{
+        flex-direction: column;
+        background-color: gray;
+        position: fixed;
+        left: 0;
+        top: 158px;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav > ul > li > a:hover{
+        transform: scale(1);
+    }
+
+    nav ul li ul{
+        left: 90px;
+    }
+
+    nav > ul > li:hover ul{
+        top: 50px;
+    }
+
+    nav > ul > li:first-child a{
+        background-position: 20px;
+    }
+
+    #selected{
+        transform: scale(1);
+    }
+
+    #label__check{
+        display: block;
+    }
+
+    .icon__menu{
+        display: flex;
+    }
+
+    #check__menu:checked ~ nav > ul{
+        height: 300px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .logo img{
+        transform: scale(1);
+    }
+
+    .carousel-inner img {
+        height: 300px; /* Ajusta para pantallas más pequeñas */
+    }
+}
+
+

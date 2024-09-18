@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(8, 178, 8);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.course-info {
+    margin-bottom: 30px;
+}
+
+.course-modules {
+    margin-bottom: 30px;
+}
+
+.course-details {
+    background-color: rgb(8, 178, 8);
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(8, 178, 8);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: grey;
+    color: white;
+}
+
+/*modulo*/
+
+.module-info {
+    margin-bottom: 30px;
+}
+
+.module-content {
+    margin-bottom: 30px;
+}
+
+.module-navigation {
+    background-color: rgb(8, 178, 8);
+    padding: 15px;
+    border-radius: 5px;
+    color:white
+}
+
+footer {
+    background-color: rgb(8, 178, 8);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
