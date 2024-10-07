@@ -2,7 +2,7 @@
 // Asegúrate de que solo los administradores puedan acceder a esta página
 session_start();
 if (!isset($_SESSION['usuario']) || !in_array($_SESSION['usuario'], ['admin', 'sdelahozc@poligran.edu.co'])) {
-    header("location:index.php");
+    header("location:index.html");
     exit();
 }
 ?>
@@ -22,9 +22,9 @@ if (!isset($_SESSION['usuario']) || !in_array($_SESSION['usuario'], ['admin', 's
         <nav>
             <ul>
                 <li><a href="">Inicio</a></li>
-                <li><a href="usuarios.php">Usuarios</a></li>
-                <li><a href="configuracion.php">Configuración</a></li>
-                <li><a href="informes.php">Informes</a></li>
+                <li><a href="usuarios.html">Usuarios</a></li>
+                <li><a href="configuracion.html">Configuración</a></li>
+                <li><a href="informes.html">Informes</a></li>
                 <li><a href="php/cerrar_sesion.php">Cerrar</a></li>
             </ul>
         </nav>
@@ -36,10 +36,10 @@ if (!isset($_SESSION['usuario']) || !in_array($_SESSION['usuario'], ['admin', 's
                     <aside>
                         <h2>Menú de Navegación</h2>
                         <ul>
-                            <li><a href="admin.php">Inicio</a></li>
-                            <li><a href="usuarios.php">Usuarios</a></li>
-                            <li><a href="configuracion.php">Configuración</a></li>
-                            <li><a href="informes.php">Informes</a></li>
+                            <li><a href="admin.html">Inicio</a></li>
+                            <li><a href="usuarios.html">Usuarios</a></li>
+                            <li><a href="configuracion.html">Configuración</a></li>
+                            <li><a href="informes.html">Informes</a></li>
                             <li><a href="php/cerrar_sesion.php">Cerrar</a></li>
                         </ul>
                     </aside>
