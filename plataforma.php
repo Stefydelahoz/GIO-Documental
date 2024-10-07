@@ -87,7 +87,15 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Cursos GIO. Todos los derechos reservados.</p>
+        <div class="container-flex">
+            <div class="gridd text-center">
+                <div class="g-col-4">
+                    <p>&#169;Elaborado por: Stefanny De La Hoz</p>
+                    <p>Política y tratamiento de datos Personales</p>
+                    <p>Autorización de Tratamiento de Datos Personales</p>
+                </div>
+            </div>
+        </div>  
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybB08ubThb2m0x4Fj9ewlbwBL2MxVoPHjB0sZy0IelGZjP5" crossorigin="anonymous"></script>

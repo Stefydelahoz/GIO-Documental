@@ -29,26 +29,29 @@ header {
     margin-top: 50px; /* Ajusta según la altura del header para evitar superposición */
 }
 
-/*header del tipo superior*/
+/*header superior*/
 
-.header_superior {
+.header__superior{
+    max-width: 1200px;
+    margin: auto;
     display: flex;
-    align-items: center; /* Alinear los elementos verticalmente */
-    justify-content: space-between; /* Espacio entre logo y título */
-    padding: 10px;
-    background-color: white;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.header_superior .logo img {
-    max-width: 90px; /* Tamaño máximo del logo */
-    height: auto; /* Mantiene la proporción del logo */
-}
-
-.header_superior h1 {
-    font-size: 2rem; /* Ajusta el tamaño del título */
+h1{
+    color: rgb(8, 178, 8);
+    size: 14px;
     text-align: center;
-    flex: 1; /* Ocupa el espacio disponible */
-    color:rgb(8, 178, 8);
+    margin-bottom: 30px;
+    margin-top: -70px;
+    padding: 0px;
+
+}
+
+.logo img{
+    width: 100px;
+    padding: 10px 10px;
 }
 
 .icono{
@@ -62,14 +65,14 @@ header {
 
 .container__menu{
     width: 100%;
-    height: 80px;
+    height: 100px;
     background: rgb(8, 178, 8);   
 }
 
 .menu{
     max-width: 1200px;
     margin: auto;
-    height: 90%;
+    height: 100%;
     padding: -20px -20px;
 }
 
@@ -205,6 +208,7 @@ h3{
 }
 
 .card-text{
+    font-family: 'Roboto', sans-serif; 
     text-align: justify;
     color: white;
 }
@@ -293,7 +297,7 @@ h4{
 
 .grid {
     background-color: rgb(8, 178, 8);
-    margin-top: 210px;
+    margin-top: 300px;
     max-width: 100%;
     padding: 0px; /* Si no necesitas relleno, `0` es suficiente */
 }
@@ -320,7 +324,7 @@ h4{
 .grid_center{
     background: white;
     border-radius: 10px;
-    margin-top: -20px;
+    margin-top: 0px;
 }
 
 .row{
@@ -338,21 +342,9 @@ h4{
 }
 
 /* Ajustar la altura del carrusel para que se vea uniforme */
-.carousel-item {
-    height: 400px; /* Establece la altura deseada */
-    overflow: hidden; /* Oculta el desbordamiento */
-}
-
 .carousel-inner img {
     object-fit: cover;
-    height: 100%; /* Ajusta según necesidad */
-}
-
-.carousel-inner h4 {
-    color: white; /* Color del texto */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    padding: 10px; /* Espaciado alrededor del texto */
+    height: 400px; /* Ajusta según necesites */
 }
 
 /* Espaciado y centrado del título */
@@ -378,14 +370,50 @@ h1 {
     align-items: center;
 }
 
+/*carrito*/
+
+.menu-vertical {
+    margin-top: 230px;
+    background-color: #f8f9fa; /* Color de fondo claro */
+    padding: 20px;
+    height: 90vh; /* Altura completa */
+    margin-left: -50px;
+}
+
+.carrito {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+button {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(8, 178, 8); /* Color del botón*/;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: gray;
+    color: white;
+    border: 2px solid black;
+}
+
+button:hover {
+    background-color: gray;
+}
+
 /* Footer */
+
 footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; /* Permite que las columnas se ajusten en varias filas si es necesario */
     background-color: #f8f9fa; /* Fondo del footer */
     padding: 20px; /* Espacio alrededor del contenido */
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .icon-container {
@@ -433,6 +461,7 @@ h3 {
 }
 
 /* Estilos para los botones laterales */
+
 .botones-laterales {
     position: fixed;
     top: 300px; /* Ajusta este valor para colocar los botones debajo del header */
@@ -472,7 +501,6 @@ body.modo-oscuro {
     color: white;
 }
 
-/* Puedes agregar más estilos para otros elementos */
 .header_superior.modo-oscuro {
     background-color: #333;
 }
@@ -501,35 +529,31 @@ body.modo-oscuro {
 
 @media screen and (max-width: 720px) {
 
-    .header_superior {
-        flex-direction: column; /* Coloca el logo encima del texto en pantallas pequeñas */
-        text-align: center;
+    .header__superior{
+        padding: 10px;
     }
 
-    .header_superior .logo img {
-        max-width: 100px; /* Reduce el tamaño del logo en pantallas pequeñas */
+    .logo img{
+        width: 100px;
     }
 
-    .header_superior h1 {
-        font-size: 1.5rem; /* Reduce el tamaño del texto en pantallas pequeñas */
-    }
 
     nav > ul{
         flex-direction: column;
-        background-color: rgb(8, 178, 8);
+        background-color: gray;
         position: fixed;
         left: 0;
         top: 158px;
         width: 100%;
-        height: 0; /* Ajustar a 0px es correcto para ocultar inicialmente */
-        transition: height 300ms ease, opacity 300ms ease; /* Añadir transición de height */
+        height: 0px;
+        transition: all 300ms ease;
         z-index: 100;
         opacity: 0;
         visibility: hidden;
     }
 
     nav > ul > li > a:hover{
-        transform: scale(1); /* Mantén el hover si lo deseas sin escalar */
+        transform: scale(1);
     }
 
     nav ul li ul{
@@ -549,24 +573,35 @@ body.modo-oscuro {
     }
 
     #label__check{
-        display: block; /* Asegura que el checkbox para abrir el menú sea visible */
+        display: block;
     }
 
     .icon__menu{
-        display: flex; /* Muestra el icono del menú en pantallas pequeñas */
+        display: flex;
     }
 
-    /* Control de la visibilidad y altura del menú al hacer check */
     #check__menu:checked ~ nav > ul{
-        height: auto; /* Mejor usar auto para ajustar al contenido */
+        height: 300px;
         visibility: visible;
         opacity: 1;
     }
 
+    .logo img{
+        transform: scale(1);
+    }
+
     .carousel-inner img {
-        height: 200px; /* Ajuste correcto para pantallas más pequeñas */
+        height: 300px; /* Ajusta para pantallas más pequeñas */
+    }
+
+    .cart-container {
+        position: absolute; /* Cambia a absoluto para posicionarlo en relación con el contenedor padre */
+        right: 10px; /* Espacio desde la derecha */
+        top: 10px; /* Espacio desde la parte superior */
+        width: auto; /* Ajusta el ancho según el contenido */
     }
 }
+
 
 
 

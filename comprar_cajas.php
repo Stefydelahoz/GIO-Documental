@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PRODUCTOS</title>
+        <title>CAJAS</title>
         <script src="https://kit.fontawesome.com/685036d062.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="Static/CSS/menu.css" >
+        <link rel="stylesheet" href="Static/CSS/compra.css" >
     </head>
     <body>
         <header>
@@ -19,7 +19,7 @@
             <div class="container__menu">
                 <div class="menu">
                     <input type="checkbox" id="check__menu">
-                    <label id="#label__check" for="check__menu">
+                    <label for="check__menu">
                         <i class="fa-solid fa-bars icon__menu"></i>
                     </label>
                     <nav>
@@ -37,71 +37,62 @@
             </div>
         </header>
         <main>
-             <div class="container-flex">
-                <div class="grid text-center">
-                    <div class="g-col-4"><h1>Nuestros Productos</h1></div>
-                </div>
-            </div>
-            <div class="container grid_center">
-                <div class="row justify-content-center">
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="static/Img/oficina.jpeg" class="card-img-top" height="250">
-                                <div class="card-body">
-                                    <h5 class="card-title">Insumos para Oficina</h5>
-                                    <a href="insumos.php" class="btn btn-dark">Buscar</a>
-                                </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Menú Vertical (Carrito) -->
+                    <div class="col-md-3">
+                        <div class="menu-vertical">
+                            <h3><i class="fa fa-shopping-cart"></i>Carrito</h3>
+                            <div class="carrito">
+                                <ul id="lista-carrito"></ul>
                             </div>
+                            <p id="total-compra">Total: 0 COP</p> <!-- Aquí se mostrará el total -->
+                            <button class="btn btn" onclick="finalizarCompra()">Finalizar Compra</button>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="static/Img/muebles.jpeg" class="card-img-top" height="250">
-                                <div class="card-body">
-                                    <h5 class="card-title">Muebles para Oficina</h5>
-                                    <a href="#" class="btn btn-dark">Buscar</a>
-                                </div>
-                            </div>
-                        </div>      
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="static/Img/archivadores.jpeg" class="card-img-top" height="250">
-                                <div class="card-body">
-                                    <h5 class="card-title">Muebles de Archivo</h5>
-                                    <a href="#" class="btn btn-dark">Buscar</a>
-                                </div>
-                            </div>
-                        </div>             
                     </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="static/Img/equipos.jpeg" class="card-img-top" height="250">
-                                <div class="card-body">
-                                    <h5 class="card-title">Equipos</h5>
-                                    <a href="#" class="btn btn-dark">Buscar</a>
+                    <!-- Menú de Productos -->
+                    <div class="col-md-9">
+                        <div class="grid text-center">
+                            <h1>Cajas de Archivo</h1>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-6 mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="static/Img/pequeña.jpg" class="card-img-top" height="200">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Caja X-100</h5>
+                                        <p>Descripción del Producto 1</p>
+                                        <p>Precio: <span id="precio-caja-x-100">3500</span> COP</p>
+                                        <input type="number" id="cantidad-caja-x-100" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                                        <a href="#" class="btn btn-dark" onclick="addToCart('Caja X-100', document.getElementById('cantidad-caja-x-100').value, 3500)">Agregar al Carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="static/Img/mediana.jpeg" class="card-img-top" height="200">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Caja X-200</h5>
+                                        <p>Descripción del Producto 2</p>
+                                        <p>Precio: <span id="precio-caja-x-200">4000</span> COP</p>
+                                        <input type="number" id="cantidad-caja-x-200" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                                        <a href="#" class="btn btn-dark" onclick="addToCart('Caja X-200', document.getElementById('cantidad-caja-x-200').value, 4000)">Agregar al Carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="static/Img/grande.jpeg" class="card-img-top" height="200">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Caja X-300</h5>
+                                        <p>Precio: <span id="precio-caja-x-300">4500</span> COP</p>
+                                        <p>Descripción del Producto 3</p>
+                                        <input type="number" id="cantidad-caja-x-300" value="1" min="1" style="width: 60px; margin-bottom: 10px;">
+                                        <a href="#" class="btn btn-dark" onclick="addToCart('Caja X-300', document.getElementById('cantidad-caja-x-300').value, 4500)">Agregar al Carrito</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="static/Img/proteccion.jpeg" class="card-img-top" height="250">
-                                <div class="card-body">
-                                    <h5 class="card-title">Elementos de Protección</h5>
-                                    <a href="#" class="btn btn-dark">Buscar</a>
-                                </div>
-                            </div>
-                        </div>      
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="static/Img/medicion.jpeg" class="card-img-top" height="250">
-                                <div class="card-body">
-                                    <h5 class="card-title">Equipos de Medición</h5>
-                                    <a href="#" class="btn btn-dark">Buscar</a>
-                                </div>
-                            </div>
-                        </div>             
                     </div>
                 </div>
             </div>
@@ -130,12 +121,13 @@
                     </div>
                     <div class="col w-auto p-3">
                         <h3>Enlaces</h3>
-                        <br>
-                        <li><a href="home.php">Nuestra Empresa</a></li>
-                        <li><a href="productos.php">Productos</a></li>
-                        <li><a href="servicios.php">Servicios</a></li>
-                        <li><a href="capacitaciones.php">Capacitaciones</a></li>
-                        <li><a href="clientes.php">Nuestros Clientes</a></li>
+                        <ul>
+                            <li><a href="home.php">Nuestra Empresa</a></li>
+                            <li><a href="productos.php">Productos</a></li>
+                            <li><a href="servicios.php">Servicios</a></li>
+                            <li><a href="capacitaciones.php">Capacitaciones</a></li>
+                            <li><a href="clientes.php">Nuestros Clientes</a></li>
+                        </ul>
                     </div>
                     <div class="col w-auto p-3">
                         <h3>Suscribete</h3>
@@ -172,7 +164,8 @@
             <a href="index.php" class="boton-lateral">Ingresar</a>
         </div>
     </body>
+    <script src="Static/js/subir.js"></script>
+    <script src="Static/js/oscuro.js"></script>
+    <script src="static/js/carrusel.js"></script>
+    <script src="static/js/comprar.js"></script>
 </html>
-<script src="Static/js/subir.js"></script>
-<script src="Static/js/oscuro.js"></script>
-<script src="static/js/carrusel.js"></script>

@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PRODUCTOS</title>
+        <title>INSCRIPCIONES</title>
         <script src="https://kit.fontawesome.com/685036d062.js" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="Static/CSS/menu.css" >
+       <!-- Bootstrap CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="Static/CSS/inscripcion.css" >
     </head>
     <body>
         <header>
@@ -16,6 +17,7 @@
                 </div>
                 <h1>GESTION INTEGRAL EN ORGANIZACIÓN DOCUMENTAL</h1>
             </div>
+            <br>
             <div class="container__menu">
                 <div class="menu">
                     <input type="checkbox" id="check__menu">
@@ -26,7 +28,7 @@
                         <ul>
                             <li><a href="#" id="selected"></a></li>
                             <li><a href="home.php">Nuestra Empresa</a></li>
-                            <li><a href="#">Productos</a></li>
+                            <li><a href="productos.php">Productos</a></li>
                             <li><a href="servicios.php">Servicios</a></li>
                             <li><a href="capacitaciones.php">Capacitaciones</a></li>
                             <li><a href="clientes.php">Nuestros Clientes</a></li>
@@ -36,73 +38,52 @@
                 </div>
             </div>
         </header>
+
         <main>
-             <div class="container-flex">
+            <div class="container-flex">
                 <div class="grid text-center">
-                    <div class="g-col-4"><h1>Nuestros Productos</h1></div>
+                    <div class="g-col-4"><h1>Inscripción a Cursos de Formación</h1></div>
                 </div>
             </div>
-            <div class="container grid_center">
-                <div class="row justify-content-center">
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="static/Img/oficina.jpeg" class="card-img-top" height="250">
-                                <div class="card-body">
-                                    <h5 class="card-title">Insumos para Oficina</h5>
-                                    <a href="insumos.php" class="btn btn-dark">Buscar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="static/Img/muebles.jpeg" class="card-img-top" height="250">
-                                <div class="card-body">
-                                    <h5 class="card-title">Muebles para Oficina</h5>
-                                    <a href="#" class="btn btn-dark">Buscar</a>
-                                </div>
-                            </div>
-                        </div>      
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="static/Img/archivadores.jpeg" class="card-img-top" height="250">
-                                <div class="card-body">
-                                    <h5 class="card-title">Muebles de Archivo</h5>
-                                    <a href="#" class="btn btn-dark">Buscar</a>
-                                </div>
-                            </div>
-                        </div>             
-                    </div>
+            <br>
+            <br>
+            <div class="container-fluid">
+                <div class="container mt-5">
+                    <h2 class="text-center">Formulario de Inscripción</h2>
                     <br>
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="static/Img/equipos.jpeg" class="card-img-top" height="250">
-                                <div class="card-body">
-                                    <h5 class="card-title">Equipos</h5>
-                                    <a href="#" class="btn btn-dark">Buscar</a>
-                                </div>
-                            </div>
+                    <form action="php/registro_usuario_be.php" method="POST">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="static/Img/proteccion.jpeg" class="card-img-top" height="250">
-                                <div class="card-body">
-                                    <h5 class="card-title">Elementos de Protección</h5>
-                                    <a href="#" class="btn btn-dark">Buscar</a>
-                                </div>
-                            </div>
-                        </div>      
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="static/Img/medicion.jpeg" class="card-img-top" height="250">
-                                <div class="card-body">
-                                    <h5 class="card-title">Equipos de Medición</h5>
-                                    <a href="#" class="btn btn-dark">Buscar</a>
-                                </div>
-                            </div>
-                        </div>             
-                    </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="usuario" class="form-label">Nombre de Usuario</label>
+                            <input type="text" class="form-control" id="usuario" name="usuario" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contrasena" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="curso" class="form-label">Seleccione un Diplomado</label>
+                            <select class="form-select" id="curso" name="curso" required>
+                                <option value="">-- Seleccione un Diplomado --</option>
+                                <option value="normatividad">Diplomado en Normatividad Archivistica</option>
+                                <option value="organizacion">Diplomado en Organización de Archivos</option>
+                                <option value="instrumentos">Diplomado en Instrumentos Archivisticos</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-dark">Inscribirse</button>
+                    </form>
                 </div>
             </div>
         </main>
@@ -162,7 +143,7 @@
                     <p>Autorización de Tratamiento de Datos Personales</p>
                 </div>
             </div>
-        </div> 
+        </div>  
         <!-- Contenedor de botones laterales -->
         <div class="botones-laterales">
             <a href="#inicio" class="boton-lateral">⬆ Subir</a>

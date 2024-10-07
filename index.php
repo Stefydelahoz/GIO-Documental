@@ -54,9 +54,6 @@
                 </div>
             </div>
         </main>
-
         <script src="Static/js/script.js"></script>
-       
-
     </body>
 </html>

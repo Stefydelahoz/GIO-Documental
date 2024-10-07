@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HOME</title>
         <script src="https://kit.fontawesome.com/685036d062.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="Static/CSS/menu.css" >
     </head>
@@ -42,31 +43,33 @@
                     <div class="g-col-4"><h1>Nuestra Empresa</h1></div>
                 </div>
             </div>
-                <div class="gill">
-                    <div class="card mb-3" style="max-width: 900px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="Static/Img/mision.jpeg" class="img-fluid rounded-start" alt="auto">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Misión</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
+            <div class="gill">
+                <div class="card mb-3" style="max-width: 900px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="Static/Img/mision.jpeg" class="img-fluid rounded-start" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Misión</h5>
+                                <p class="card-text">
+                                    Ofrecer soluciones integrales en gestión documental y archivo, mediante la comercialización de insumos especializados, la prestación de servicios de alta calidad y la impartición de cursos formativos. Buscamos apoyar a empresas e instituciones en la organización y preservación eficiente de su información, garantizando un manejo adecuado y accesible de los documentos que son clave para su operativa.
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
+            </div>
                 <div class="gill">
                     <div class="card mb-3" style="max-width: 900px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="Static/Img/vision.jpeg" class="img-fluid rounded-start" alt="auto">
+                                <img src="Static/Img/vision.jpeg" class="img-fluid rounded-start" alt="">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Visión</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">Ser la empresa líder en gestión documental y archivo en el mercado, reconocida por la excelencia en nuestros productos, servicios y formación. Aspiramos a ser el referente en innovación y calidad, contribuyendo al desarrollo de estándares elevados en la conservación y administración de documentos, ayudando a nuestros clientes a maximizar su eficiencia operativa y cumplimiento normativo.</p>
                                 </div>
                             </div>
                         </div>
@@ -74,15 +77,20 @@
                 </div> 
             </div>     
             <br>     
-            <div class="container text-center">
+            <div class="container text-center hist">
                 <div class="row w-auto p-3">
                     <div class="col w-auto p-3">
-                        <h3>Reseña Historica</h3>
+                        <h4>Reseña Historica</h4>
                         <br>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text ">GIO Documental se estableció con el objetivo de transformar la gestión documental en Barranquilla, Colombia. Desde sus inicios como proveedor de insumos para archivo, la empresa ha evolucionado hacia un referente en soluciones integrales de gestión documental, ofreciendo también servicios especializados y cursos de formación.
+                            <br>
+                            A lo largo de los años, GIO Documental ha crecido significativamente, alcanzando reconocimiento en 2024 y formando alianzas estratégicas que han ampliado su presencia en el mercado. Hoy, la empresa se destaca por su compromiso con la calidad y la innovación, ayudando a empresas e instituciones a optimizar sus procesos de archivo y preservación de información.
+                            <br>
+                            Con una visión hacia el futuro, GIO Documental sigue adaptándose a las nuevas tendencias y tecnologías, reafirmando su posición como líder en el sector.
+                        </p>
                     </div>
                     <div class="col w-auto p-3">
-                        <img src="Static/Img/empresa.jpg" class="img-fluid" alt="...">
+                        <img src="Static/Img/empresa.jpg" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>  
@@ -152,6 +160,7 @@
             <a href="index.php" class="boton-lateral">Ingresar</a>
         </div>
     </body>
+    <script src="Static/js/subir.js"></script>
+    <script src="Static/js/oscuro.js"></script>
 </html>
-<script src="Static/js/subir.js"></script>
-<script src="Static/js/oscuro.js"></script>
+

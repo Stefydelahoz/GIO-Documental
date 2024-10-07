@@ -22,38 +22,59 @@ if (!isset($_SESSION['usuario']) || !in_array($_SESSION['usuario'], ['admin', 's
         <nav>
             <ul>
                 <li><a href="">Inicio</a></li>
-                <li><a href="">Usuarios</a></li>
-                <li><a href="">Configuración</a></li>
-                <li><a href="">Informes</a></li>
+                <li><a href="usuarios.php">Usuarios</a></li>
+                <li><a href="configuracion.php">Configuración</a></li>
+                <li><a href="informes.php">Informes</a></li>
                 <li><a href="php/cerrar_sesion.php">Cerrar</a></li>
             </ul>
         </nav>
     </header>
-    <aside>
-        <h2>Menú de Navegación</h2>
-        <ul>
-            <li><a href="">Panel de Control</a></li>
-            <li><a href="">Gestión de Usuarios</a></li>
-            <li><a href="">Configuración del Sistema</a></li>
-            <li><a href="">Informes y Estadísticas</a></li>
-        </ul>
-    </aside>
     <main>
-        <h2>Bienvenido al Panel de Administrador</h2>
-        <div class="dashboard">
-            <div class="card">
-                <h3>Estadísticas</h3>
-                <p>Resumen de estadísticas importantes.</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <aside>
+                        <h2>Menú de Navegación</h2>
+                        <ul>
+                            <li><a href="admin.php">Inicio</a></li>
+                            <li><a href="usuarios.php">Usuarios</a></li>
+                            <li><a href="configuracion.php">Configuración</a></li>
+                            <li><a href="informes.php">Informes</a></li>
+                            <li><a href="php/cerrar_sesion.php">Cerrar</a></li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class=" col-md-9">
+                    <div class="grid text-center">
+                            <h1>Bienvenido al Panel de Administrador</h1>
+                    </div>
+                    <br>
+                    <div class="dashboard">
+                            <div class="card">
+                                <h3>Estadísticas</h3>
+                                <p>Resumen de estadísticas importantes.</p>
+                            </div>
+                            <div class="card">
+                                <h3>Notificaciones</h3>
+                                <p>Últimas notificaciones y alertas.</p>
+                            </div>
+                            <!-- Añade más tarjetas o widgets aquí -->
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <h3>Notificaciones</h3>
-                <p>Últimas notificaciones y alertas.</p>
-            </div>
-            <!-- Añade más tarjetas o widgets aquí -->
         </div>
     </main>
     <footer>
-        <p>&copy; 2024 Tu Aplicación. Todos los derechos reservados.</p>
+        <div class="container-flex">
+            <div class="gridd text-center">
+                <div class="g-col-4">
+                    <p>&#169;Elaborado por: Stefanny De La Hoz</p>
+                    <p>Política y tratamiento de datos Personales</p>
+                    <p>Autorización de Tratamiento de Datos Personales</p>
+                </div>
+            </div>
+        </div> 
     </footer>
 </body>
 </html>

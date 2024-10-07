@@ -6,7 +6,7 @@
         <title>CAPACITACIONES</title>
         <script src="https://kit.fontawesome.com/685036d062.js" crossorigin="anonymous"></script>
        <!-- Bootstrap CSS -->
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="Static/CSS/menu.css" >
     </head>
     <body>
@@ -16,12 +16,8 @@
                     <img src="Static/Img/logo.png" alt="">
                 </div>
                 <h1>GESTION INTEGRAL EN ORGANIZACIÓN DOCUMENTAL</h1>
-            <!--<div class="search">
-                    <input type="search" placeholder="¿qué deseas buscar?">
-                </div>-->  
             </div>
             <div class="container__menu">
-
                 <div class="menu">
                     <input type="checkbox" id="check__menu">
                     <label id="#label__check" for="check__menu">
@@ -39,9 +35,7 @@
                         </ul>
                     </nav>
                 </div>
-
             </div>
-
         </header>
 
         <main>
@@ -51,85 +45,92 @@
                 </div>
             </div>
             <br>
-            <br>
             <div class="container grid_center">
                 <div class="row justify-content-center">
-                        <div class="col-md-12">
-                            <div id="carouselExample" class="carousel slide">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                </div>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                    <img src="static/Img/normatividad.jpeg" class="d-block w-100" width= "250" height="400">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h4>Normatividad Archivistica</h4>
-                                            <p>Some representative placeholder content for the first slide.</p>
-                                        </div>
-                                    </div>
-                                        <div class="carousel-item active">
-                                        <img src="static/Img/organizacion.jpeg" class="d-block w-100" width= "250" height="400">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>Organización Documental</h5>
-                                            <p>Some representative placeholder content for the second slide.</p>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="static/Img/curso.jpeg" class="d-block w-100" width= "250" height="400">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h5>Instrumentos Archivisticos</h5>
-                                            <p>Some representative placeholder content for the third slide.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                    <div class="col-md-12">
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="static/Img/normatividad.jpeg" class="d-block w-100">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Normatividad Archivistica</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="static/Img/organizacion.jpg" class="d-block w-100">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Organización Documental</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="static/Img/instrumentos.jpg" class="d-block w-100">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4>Instrumentos Archivisticos</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                    
+                    </div>
                     <br>
                     <div class="row justify-content-center">
-                        <div class="col-sm-4 mb-3">
-                            <div class="card" style="width: 18rem;">
-                                <img src="static/Img/normatividad.jpeg" class="card-img-top" height="250">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card" style="width: 100%;">
+                                <img src="static/Img/normatividad.jpeg" class="card-img-top" style="height: 250px; object-fit: cover;">
                                 <div class="card-body">
-                                    <h5 class="card-title">Normatividad Archivistica</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <h5 class="card-title" style="text-align: center;">Diplomado en Normatividad Archivistica</h5>
+                                    <br>
+                                    <p class="card-text">
+                                        Duración: 80 Hrs<br>
+                                        Costo: $450.000 Cop
+                                    </p>
                                 </div>
-                                <div class="card-body">
-                                    <a href="#" class="card-link">Inscribirse</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card" style="width: 18rem;">
-                                <img src="static/Img/organizacion.jpeg" class="card-img-top" height="250">
-                                <div class="card-body">
-                                    <h5 class="card-title">Organización de Archivos</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                                <div class="card-body">
-                                    <a href="#" class="card-link">Inscribirse</a>
+                                <div class="card-body" style="background-color: rgb(8, 178, 8)">
+                                    <a href="inscripciones.php" class="card-link">Inscribirse</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="card" style="width: 18rem;">
-                                <img src="static/Img/curso.jpeg" class="card-img-top" height="250">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card" style="width: 100%;">
+                                <img src="static/Img/organizacion.jpg" class="card-img-top" style="height: 250px; object-fit: cover;">
                                 <div class="card-body">
-                                    <h5 class="card-title">Instrumentos Archivisticos</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <h5 class="card-title" style="text-align: center;">Diplomado en Organización de Archivos</h5>
+                                    <br>
+                                    <p class="card-text">
+                                        Duración: 80 Hrs<br>
+                                        Costo: $450.000 Cop
+                                    </p>
                                 </div>
+                                <div class="card-body" style="background-color: rgb(8, 178, 8)">
+                                    <a href="inscripciones.php" class="card-link">Inscribirse</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card" style="width: 100%;">
+                                <img src="static/Img/instrumentos.jpg" class="card-img-top" style="height: 250px; object-fit: cover;">
                                 <div class="card-body">
-                                    <a href="#" class="card-link">Inscribirse</a>
+                                    <h5 class="card-title" style="text-align: center;">Diplomado en Instrumentos Archivisticos</h5>
+                                    <br>
+                                    <p class="card-text">
+                                        Duración: 80 Hrs<br>
+                                        Costo: $450.000 Cop
+                                    </p>
+                                </div>
+                                <div class="card-body" style="background-color: rgb(8, 178, 8)">
+                                    <a href="inscripciones.php" class="card-link">Inscribirse</a>
                                 </div>
                             </div>
                         </div>
@@ -187,9 +188,13 @@
         </footer>
         <div class="container-flex">
             <div class="gridd text-center">
-                <div class="g-col-4"><p>&#169;Elaborado por: Stefanny De La Hoz</p></div>
+                <div class="g-col-4">
+                    <p>&#169;Elaborado por: Stefanny De La Hoz</p>
+                    <p>Política y tratamiento de datos Personales</p>
+                    <p>Autorización de Tratamiento de Datos Personales</p>
+                </div>
             </div>
-        </div> 
+        </div>  
         <!-- Contenedor de botones laterales -->
         <div class="botones-laterales">
             <a href="#inicio" class="boton-lateral">⬆ Subir</a>
@@ -198,8 +203,9 @@
             <button id="modoOscuroBtn" class="boton-lateral">🌙 Modo Oscuro</button>
             <a href="index.php" class="boton-lateral">Ingresar</a>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="Static/js/subir.js"></script>
+        <script src="Static/js/oscuro.js"></script>
+        <script src="static/js/carrusel.js"></script>
     </body>
 </html>
-<script src="Static/js/subir.js"></script>
-<script src="Static/js/oscuro.js"></script>
-<script src="static/js/carrusel.js"></script>

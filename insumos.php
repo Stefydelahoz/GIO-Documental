@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PRODUCTOS</title>
+        <title>INSUMOS</title>
         <script src="https://kit.fontawesome.com/685036d062.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="Static/CSS/menu.css" >
@@ -15,8 +15,12 @@
                     <img src="Static/Img/logo.png" alt="">
                 </div>
                 <h1>GESTION INTEGRAL EN ORGANIZACIÓN DOCUMENTAL</h1>
+            <!--<div class="search">
+                    <input type="search" placeholder="¿qué deseas buscar?">
+                </div>-->  
             </div>
             <div class="container__menu">
+
                 <div class="menu">
                     <input type="checkbox" id="check__menu">
                     <label id="#label__check" for="check__menu">
@@ -37,37 +41,38 @@
             </div>
         </header>
         <main>
-             <div class="container-flex">
+            <div class="container-flex">
                 <div class="grid text-center">
-                    <div class="g-col-4"><h1>Nuestros Productos</h1></div>
+                    <div class="g-col-4"><h1>Insumos para Oficina</h1></div>
                 </div>
             </div>
+            <br>
             <div class="container grid_center">
                 <div class="row justify-content-center">
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="static/Img/oficina.jpeg" class="card-img-top" height="250">
+                        <div class="col-sm-4 mb-3 mb-sm-0">
+                            <div class="card" style="width: 18rem;">
+                                <img src="static/Img/cajas.jpeg" class="card-img-top" height="250">
                                 <div class="card-body">
-                                    <h5 class="card-title">Insumos para Oficina</h5>
-                                    <a href="insumos.php" class="btn btn-dark">Buscar</a>
+                                    <h5 class="card-title">Cajas de Archivo</h5>
+                                    <a href="comprar_cajas.php" class="btn btn-dark">Buscar</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="static/Img/muebles.jpeg" class="card-img-top" height="250">
+                        <div class="col-sm-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="static/Img/carpetas.jpeg" class="card-img-top" height="250">
                                 <div class="card-body">
-                                    <h5 class="card-title">Muebles para Oficina</h5>
+                                    <h5 class="card-title">Carpetas</h5>
                                     <a href="#" class="btn btn-dark">Buscar</a>
                                 </div>
                             </div>
                         </div>      
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card" style="width: 100%;">
-                                <img src="static/Img/archivadores.jpeg" class="card-img-top" height="250">
+                        <div class="col-sm-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="static/Img/legajos.jpeg" class="card-img-top" height="250">
                                 <div class="card-body">
-                                    <h5 class="card-title">Muebles de Archivo</h5>
+                                    <h5 class="card-title">Cartulinas Legajadoras</h5>
                                     <a href="#" class="btn btn-dark">Buscar</a>
                                 </div>
                             </div>
@@ -75,8 +80,8 @@
                     </div>
                     <br>
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card" style="width: 100%;">
+                        <div class="col-sm-4 mb-3 mb-sm-0">
+                            <div class="card" style="width: 18rem;">
                                 <img src="static/Img/equipos.jpeg" class="card-img-top" height="250">
                                 <div class="card-body">
                                     <h5 class="card-title">Equipos</h5>
@@ -84,8 +89,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card" style="width: 100%;">
+                        <div class="col-sm-4">
+                            <div class="card" style="width: 18rem;">
                                 <img src="static/Img/proteccion.jpeg" class="card-img-top" height="250">
                                 <div class="card-body">
                                     <h5 class="card-title">Elementos de Protección</h5>
@@ -93,8 +98,8 @@
                                 </div>
                             </div>
                         </div>      
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <div class="card" style="width: 100%;">
+                        <div class="col-sm-4">
+                            <div class="card" style="width: 18rem;">
                                 <img src="static/Img/medicion.jpeg" class="card-img-top" height="250">
                                 <div class="card-body">
                                     <h5 class="card-title">Equipos de Medición</h5>

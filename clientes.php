@@ -83,7 +83,7 @@
                     <div class="card mb-3" style="max-width: 900px;">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="Static/Img/alcaldia.png" class="img-fluid rounded-start">
+                                <img src="static/Img/alcaldia.png" class="img-fluid rounded-start">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -175,9 +175,13 @@
         </footer>
         <div class="container-flex">
             <div class="gridd text-center">
-                <div class="g-col-4"><p>&#169;Elaborado por: Stefanny De La Hoz</p></div>
+                <div class="g-col-4">
+                    <p>&#169;Elaborado por: Stefanny De La Hoz</p>
+                    <p>Política y tratamiento de datos Personales</p>
+                    <p>Autorización de Tratamiento de Datos Personales</p>
+                </div>
             </div>
-        </div> 
+        </div>  
         <!-- Contenedor de botones laterales -->
         <div class="botones-laterales">
             <a href="#inicio" class="boton-lateral">⬆ Subir</a>

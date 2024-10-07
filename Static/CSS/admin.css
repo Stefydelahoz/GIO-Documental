@@ -33,16 +33,33 @@ nav ul li a {
     text-decoration: none;
 }
 
+li {
+    list-style: none; /* Remueve el punto de la lista */
+    margin-bottom: 5px; /* Espacio entre los elementos de la lista */
+}
+
+li a {
+    text-decoration: none; /* Remueve el subrayado de los enlaces */
+    padding-left: 0px;
+    font-size: 18px; /* Tamaño del texto */
+    color: white; /* Color del texto */
+}
+
+li a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
 aside {
-    width: 200px;
-    background-color: #f4f4f4;
-    padding: 1rem;
-    border-right: 1px solid #ddd;
+    width: 250px;
+    background-color: gray;
+    padding: 20px;
+    border-right: 1px solid gray;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
 }
 
 main {
     flex: 1;
-    padding: 1rem;
+    padding: 20px;
 }
 
 footer {
@@ -64,3 +81,58 @@ footer {
     border-radius: 6px;
     flex: 1;
 }
+
+.button{
+    position: center;
+}
+
+.btn {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 20%;
+    background-color: rgb(8, 178, 8); /* Color del botón*/;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.btn:hover {
+    background-color: gray;
+    color: white;
+    border: 2px solid black;
+}
+
+.grid {
+    background-color: rgb(8, 178, 8);
+    margin-top: 0px;
+    max-width: 100%;
+    padding: 0px; /* Si no necesitas relleno, `0` es suficiente */
+}
+
+h1,
+h2 {
+    color: white;
+}
+
+.btn-danger {
+    background-color: #e3342f;
+    padding: 10px;
+    width: 100%;
+}
+
+.gridd{
+    background-color: rgb(8, 178, 8);
+    margin-top: 0px;
+    max-width: 100%;
+    padding: 0px 0px;
+}
+
+.gridd p{
+    color: white;
+    font-size: 18px;
+    margin: 0; /* Elimina los márgenes alrededor de los párrafos */
+    padding: 0; /* Elimina el relleno alrededor de los párrafos */
+    line-height: 1.2; /* Ajusta el espacio entre líneas; puedes cambiar el valor según lo necesites */
+}
+

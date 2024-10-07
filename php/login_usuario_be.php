@@ -1,4 +1,4 @@
-login_usuario_be.php <?php
+<?php
 session_start();
 include 'conexion_be.php';
 

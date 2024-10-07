@@ -18,47 +18,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos GIO</title>
+    <title>Panel Usuario</title>
     <script src="https://kit.fontawesome.com/685036d062.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
     <link rel="stylesheet" href="static/css/cursos.css">
 </head>
 <body>
-    <header>
-        <h1>Cursos GIO</h1>
+<header>
+        <h1>Mi Panel de Usuario</h1>
         <nav>
             <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="panel.php">Mi Panel</a></li>
+                <li><a href="cursos.php">Inicio</a></li>
+                <li><a href="">Mi Panel</a></li>
                 <li><a href="certificados.php">Mis Certificados</a></li>
                 <li><a href="php/cerrar_sesion.php">Cerrar Sesión</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="dashboard">
-            <h2>Bienvenido, <?php echo htmlspecialchars($nombreUsuario); ?></h2>
-            <div class="courses">
-                <h3>Mis Cursos</h3>
-                <div class="course-item">
-                    <h4>Diplomado de Elaboración de Instrumentos Archivisticos</h4>
-                    <p>Progreso: 40%</p>
-                    <a href="plataforma.php" class="btn">Continuar Curso</a>
-                </div>
-                <div class="course-item">
-                    <h4>Diplomado en Normatividad Archivistica</h4>
-                    <p>Progreso: 75%</p>
-                    <a href="" class="btn">Continuar Curso</a>
-                </div>
-                <!-- Puedes añadir más cursos según la información del usuario -->
-            </div>
-            <div class="available-courses">
-                <h3>Cursos Disponibles</h3>
-                <p>Explora más cursos para seguir aprendiendo.</p>
-                <a href="" class="btn">Ver Cursos Disponibles</a>
-            </div>
-        </section>
-    </main>
+    
+    <section class="dashboard">     
+        <h2>Bienvenido, <?php echo htmlspecialchars($nombreUsuario); ?></h2>
+        <nav>
+            <ul>
+                <li><a href="tareas.php">Tareas</a></li>
+                <li><a href="calificaciones.php">Calificaciones</a></li>
+                <li><a href="perfil.php">Perfil</a></li>
+                <li><a href="logout.php">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+        <h2>Tus Certificados</h2>
+        <?php if ($resultado_certificados->num_rows > 0): ?>
+            <ul>
+                <?php while ($fila = $resultado_certificados->fetch_assoc()): ?>
+                    <li>
+                        Curso: <?php echo $fila['nombre_curso']; ?><br>
+                        Certificado: <a href="descargar_certificado.php?ruta=<?php echo $fila['ruta_certificado']; ?>">
+                        <?php echo $fila['nombre_certificado']; ?></a>
+                    </li>
+                <?php endwhile; ?>
+            </ul>
+        <?php else: ?>
+            <p>No tienes certificados disponibles.</p>
+        <?php endif; ?>
+    </section>
     <footer>
         <div class="container-flex">
             <div class="gridd text-center">
