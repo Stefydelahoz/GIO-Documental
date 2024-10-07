@@ -2,7 +2,7 @@
     // Asegúrate de que solo los administradores puedan acceder a esta página
     session_start();
     if (!isset($_SESSION['usuario']) || !in_array($_SESSION['usuario'], ['admin', 'sdelahozc@poligran.edu.co'])) {
-        header("location:index.php");
+        header("location:login.html");
         exit();
     }
 
@@ -39,7 +39,7 @@
         <h1>Panel de Administrador</h1>
         <nav>
             <ul>
-                <li><a href="admin.php">Inicio</a></li>
+                <li><a href="admin.html">Inicio</a></li>
                 <li><a href="">Usuarios</a></li>
                 <li><a href="">Configuración</a></li>
                 <li><a href="">Informes</a></li>
@@ -54,11 +54,11 @@
                     <aside>
                         <h2>Gestión de Usuarios</h2>
                         <ul>
-                            <li><a href="admin.php">Inicio</a></li>
-                            <li><a href="usuarios.php">Consultar Usuarios</a></li>
+                            <li><a href="admin.html">Inicio</a></li>
+                            <li><a href="usuarios.html">Consultar Usuarios</a></li>
                             <li><a href="">Registrar Usuarios</a></li>
-                            <li><a href="editar.php">Editar Usuarios</a></li>
-                            <li><a href="eliminar.php">Eliminar Usuarios</a></li>
+                            <li><a href="editar.html">Editar Usuarios</a></li>
+                            <li><a href="eliminar.html">Eliminar Usuarios</a></li>
                         </ul>
                     </aside>
                 </div>
